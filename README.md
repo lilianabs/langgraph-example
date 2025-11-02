@@ -15,3 +15,13 @@ To use the existing uv setup:
 2. Install this project dependencies with command `uv sync`. 
 3. Create `.env` file and place the Anthropic API key as variable: `ANTHROPIC_API_KEY=`.
 4. Run an agent as `uv run basic.py` (or any other agent that is in this repo).
+
+To add LangSmith observability,
+add to the `.env` file the following variables:
+
+```
+LANGSMITH_TRACING=true
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+LANGSMITH_API_KEY=<your-api-key>
+LANGSMITH_PROJECT=<project-name>
+```
